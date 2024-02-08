@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/PolusAI/filepattern/archive/v{{ version }}.tar.gz
-  sha256: 6602aeb0baf75a83b00f9a9d27c998e9c01d70d41e4381728ca1d1361c5bed4a
+  sha256: b883e55e16bdd937ca2e3722f320d3759e71ebd9835267c8c9399484399bf3ec
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x') }}
 

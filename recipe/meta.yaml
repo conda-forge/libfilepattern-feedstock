@@ -1,5 +1,5 @@
 {% set name = "libfilepattern" %}
-{% set version = "2.0.5" %}
+{% set version = "2.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/PolusAI/filepattern/archive/v{{ version }}.tar.gz
-  sha256: b883e55e16bdd937ca2e3722f320d3759e71ebd9835267c8c9399484399bf3ec
+  sha256: e6fa524637f497d1397e5f0d62ee271e7594fd066e7e30255f7afcbaa148346f
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x') }}
 
@@ -19,6 +19,7 @@ requirements:
     - cmake
     - make  # [not win]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - git
 

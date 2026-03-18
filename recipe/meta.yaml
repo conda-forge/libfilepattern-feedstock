@@ -1,5 +1,5 @@
 {% set name = "libfilepattern" %}
-{% set version = "2.1.4" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/filepattern/archive/v{{ version }}.tar.gz
-  sha256: b30dff1972c101ee3f50a4647637a42fac3cb72c87c78f308cf2749879b0e4b5
+  sha256: b06ee17aaacfcf94c90e24a36dc0ec622670f5f17d22fe2716930b5e0205b7c6
 
 build:
   number: 0
